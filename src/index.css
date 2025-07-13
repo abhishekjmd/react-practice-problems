@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./assets/assets/fonts/WorkSans-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
