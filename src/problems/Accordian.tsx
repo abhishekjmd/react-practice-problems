@@ -3,7 +3,7 @@ import { accordianBackground, iconMinus, iconPlus, iconStar } from "../assets";
 
 function Accordian() {
   //   const [toggleAccordion, setToggleAccordion] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState([]);
 
   const faqData = [
     {
@@ -45,7 +45,9 @@ function Accordian() {
   ];
 
   const handleAccordian = (index) => {
-    setSelectedIndex((prev) => (prev === index ? null : index));
+    setSelectedIndex((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
   };
 
   return (
@@ -71,7 +73,7 @@ function Accordian() {
                     <img src={iconPlus} className="h-4.5 w-4.5" />
                   )}
                 </div>
-                {selectedIndex === item.index && (
+                {selectedIndex.includes(item.index) && (
                   <p className="text-[9px] text-gray-500 mb-2.5">
                     {item.answer}
                   </p>
