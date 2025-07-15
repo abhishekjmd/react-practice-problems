@@ -13,7 +13,7 @@ import {
 import { debounceFunction } from "../util/debounceFunction";
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: import.meta.env.VITE_AUTH_TOKEN,
 });
 
 function SearchBar() {
@@ -151,17 +151,17 @@ function SearchBar() {
               />
             </div>
             <div className=" w-[65%] lg:w-[75%] flex flex-col gap-2 lg:gap-1">
-              <div className="flex w-[100%]  justify-between items-center">
+              <div className="flex w-[100%]  lg:justify-between items-center">
                 <div
                   className="flex flex-row gap-1 lg:gap-2 items-center cursor-pointer"
                   onClick={() => handleProfileVisit(selectedUser?.html_url)}
                 >
-                  <p className="text-white font-mono text-sm lg:text-xl underline decoration-1 underline-offset-3">
+                  <p className="text-white w-[90%] lg:w-auto font-mono text-xs lg:text-xl underline decoration-1 underline-offset-3">
                     {selectedUser?.name}
                   </p>
-                  {/* <img src={arrowUp} className="h-5 w-5" /> */}
+                  <img src={arrowUp} className="hidden lg:block h-5 w-5" />
                 </div>
-                <p className="text-white font-mono text-xs">
+                <p className="text-white font-mono w-[30%] lg:w-auto text-[12px] lg:text-xs">
                   {accountCreationTime(selectedUser?.created_at)}
                 </p>
               </div>
@@ -292,6 +292,7 @@ function SearchBar() {
                       <img
                         src={location}
                         className="lg:h-4 lg:w-4 h-2.5 w-2.5"
+                        
                       />
                       <span className="text-gray-300 font-mono text-[10px] lg:text-xs">
                         {selectedUser?.location
