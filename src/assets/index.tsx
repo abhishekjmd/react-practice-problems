@@ -1,4 +1,12 @@
-export {default as accordianBackground} from './accordian/background-pattern-desktop.svg';
-export {default as iconStar} from './accordian/icon-star.svg';
-export {default as iconMinus} from './accordian/icon-minus.svg';
-export {default as iconPlus} from './accordian/icon-plus.svg';
+export { default as accordianBackground } from "./accordian/background-pattern-desktop.svg";
+export { default as iconStar } from "./accordian/icon-star.svg";
+export { default as iconMinus } from "./accordian/icon-minus.svg";
+export { default as iconPlus } from "./accordian/icon-plus.svg";
+export { default as lightMode } from "./seach/brightness.png";
+export { default as search } from "./seach/search.png";
+export { default as arrowUp } from "./seach/right-up.png";
+export { default as profile } from "./profile.jpg";
+export { default as location } from "./seach/pin.png";
+export { default as x } from "./seach/twitter.png";
+export { default as link } from "./seach/link.png";
+export { default as linkedin } from "./seach/linkedin.png";
