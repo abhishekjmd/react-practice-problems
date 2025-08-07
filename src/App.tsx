@@ -11,17 +11,23 @@ import Accordian from "./problems/Accordian";
 import ContactUs from "./problems/ContactUs";
 import SearchBar from "./problems/SearchBar";
 import Counter from "./problems/counter/Counter1";
+import DoubleAndHalfCounter from "./problems/counter/DoubleAndHalfCounter";
+import MaxLimitCounter from "./problems/counter/MaxLimitCounter";
+import TimerBasedAutoCounter from "./problems/counter/TimerBasedAutoCounter";
 
 export default function App() {
   return (
     <div className="w-[100vw]  lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
-      <Counter />
+      {/* <Counter /> */}
+      {/* <DoubleAndHalfCounter /> */}
+      {/* <MaxLimitCounter /> */}
+      {/* <TimerBasedAutoCounter /> */}
     </div>
     // <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
     //   {/* <Accordian /> */}
     //   {/* <ContactUs /> */}
     //   {/* <SearchBar /> */}
-      
+      // <Counter />
     // </div>
   );
 }
