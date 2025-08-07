@@ -20,6 +20,8 @@ function SearchBar() {
   const [searchData, setSearchData] = useState([]);
   const [selectedUser, setSelectedUser] = useState({});
 
+  console.log('auth token',import.meta.env.VITE_AUTH_TOKEN)
+
   const handleSearch = debounceFunction(async (value) => {
     if (value.length > 0) {
       const response = await octokit.request("GET /search/users", {

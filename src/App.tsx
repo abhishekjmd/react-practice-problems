@@ -10,13 +10,18 @@ import ModalDialog from "./problems/ModalDialog";
 import Accordian from "./problems/Accordian";
 import ContactUs from "./problems/ContactUs";
 import SearchBar from "./problems/SearchBar";
+import Counter from "./problems/counter/Counter1";
 
 export default function App() {
   return (
-    <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
-      {/* <Accordian /> */}
-      {/* <ContactUs /> */}
-      <SearchBar />
+    <div className="w-[100vw]  lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
+      <Counter />
     </div>
+    // <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
+    //   {/* <Accordian /> */}
+    //   {/* <ContactUs /> */}
+    //   {/* <SearchBar /> */}
+      
+    // </div>
   );
 }
