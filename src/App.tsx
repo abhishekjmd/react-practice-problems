@@ -14,20 +14,28 @@ import Counter from "./problems/counter/Counter1";
 import DoubleAndHalfCounter from "./problems/counter/DoubleAndHalfCounter";
 import MaxLimitCounter from "./problems/counter/MaxLimitCounter";
 import TimerBasedAutoCounter from "./problems/counter/TimerBasedAutoCounter";
+import Toggle from "./problems/toggle/Toggle";
+import CounterToggle from "./problems/toggle/CounterToggle";
+import StepInputCounterToggle from "./problems/toggle/StepInputCounterToggle";
 
 export default function App() {
   return (
-    <div className="w-[100vw]  lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
+    <>
+      <div className="w-[100vw]  lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
+        {/* <Counter /> */}
+        {/* <DoubleAndHalfCounter /> */}
+        {/* <MaxLimitCounter /> */}
+        {/* <TimerBasedAutoCounter /> */}
+        {/* <Toggle /> */}
+        {/* <CounterToggle /> */}
+        <StepInputCounterToggle />
+      </div>
+      {/* <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center"> */}
+      {/* <Accordian /> */}
+      {/* <ContactUs /> */}
+      {/* <SearchBar /> */}
       {/* <Counter /> */}
-      {/* <DoubleAndHalfCounter /> */}
-      {/* <MaxLimitCounter /> */}
-      {/* <TimerBasedAutoCounter /> */}
-    </div>
-    // <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
-    //   {/* <Accordian /> */}
-    //   {/* <ContactUs /> */}
-    //   {/* <SearchBar /> */}
-      // <Counter />
-    // </div>
+      {/* </div> */}
+    </>
   );
 }
