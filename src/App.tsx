@@ -18,6 +18,7 @@ import Toggle from "./problems/toggle/Toggle";
 import CounterToggle from "./problems/toggle/CounterToggle";
 import StepInputCounterToggle from "./problems/toggle/StepInputCounterToggle";
 import AutoHideToggle from "./problems/toggle/AutoHideToggle";
+import DynamicTextToggle from "./problems/toggle/DynamicTextToggle";
 
 export default function App() {
   return (
@@ -30,7 +31,8 @@ export default function App() {
         {/* <Toggle /> */}
         {/* <CounterToggle /> */}
         {/* <StepInputCounterToggle /> */}
-        <AutoHideToggle />
+        {/* <AutoHideToggle /> */}
+        <DynamicTextToggle />
       </div>
       {/* <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center"> */}
       {/* <Accordian /> */}
