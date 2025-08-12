@@ -4,7 +4,7 @@ export default function DynamicTextToggle() {
   const [isVisible, setIsVisible] = useState(false);
   const [message, setMessage] = useState("");
   const handleVisibility = () => setIsVisible(!isVisible);
-  const handleInput = (value) => {
+  const handleInput = (value: string) => {
     setMessage(value);
   };
   return (
