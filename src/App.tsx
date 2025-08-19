@@ -14,12 +14,22 @@ import Counter from "./problems/counter/Counter1";
 import DoubleAndHalfCounter from "./problems/counter/DoubleAndHalfCounter";
 import MaxLimitCounter from "./problems/counter/MaxLimitCounter";
 import TimerBasedAutoCounter from "./problems/counter/TimerBasedAutoCounter";
-import Toggle from "./problems/toggle/Toggle";
-import CounterToggle from "./problems/toggle/CounterToggle";
-import StepInputCounterToggle from "./problems/toggle/StepInputCounterToggle";
-import AutoHideToggle from "./problems/toggle/AutoHideToggle";
-import DynamicTextToggle from "./problems/toggle/DynamicTextToggle";
-import CheckboxDisableToggle from "./problems/toggle/CheckboxDisableToggle";
+import {
+  CharacterCount,
+  ClearCharacter,
+  DisableSubmit,
+  RemainingCount,
+  WordAndCharacterCount,
+} from "./problems/characters";
+import AutoUppercaseToggle from "./problems/characters/AutoUppercase";
+import {
+  AutoHideToggle,
+  CheckboxDisableToggle,
+  CounterToggle,
+  DynamicTextToggle,
+  StepInputCounterToggle,
+  Toggle,
+} from "./problems/toggle";
 
 export default function App() {
   return (
@@ -29,12 +39,19 @@ export default function App() {
         {/* <DoubleAndHalfCounter /> */}
         {/* <MaxLimitCounter /> */}
         {/* <TimerBasedAutoCounter /> */}
-        {/* <Toggle /> */}
-        {/* <CounterToggle /> */}
-        {/* <StepInputCounterToggle /> */}
-        {/* <AutoHideToggle /> */}
-        {/* <DynamicTextToggle /> */}
+        {/* <Toggle />
+        <CounterToggle />
+        <StepInputCounterToggle />
+        <AutoHideToggle />
+        <DynamicTextToggle />
         <CheckboxDisableToggle />
+        <CharacterCount />
+        <RemainingCount />
+        <DisableSubmit />
+        <ClearCharacter />
+        <WordAndCharacterCount />
+        <MaxLimitCounter />
+        <AutoUppercaseToggle /> */}
       </div>
       {/* <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center"> */}
       {/* <Accordian /> */}
