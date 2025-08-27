@@ -30,16 +30,17 @@ import {
   StepInputCounterToggle,
   Toggle,
 } from "./problems/toggle";
+import SearchSortTodo from "./problems/todo/SearchSortTodo";
 
 export default function App() {
   return (
-    <>
-      <div className="w-[100vw]  lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
-        {/* <Counter /> */}
-        {/* <DoubleAndHalfCounter /> */}
-        {/* <MaxLimitCounter /> */}
-        {/* <TimerBasedAutoCounter /> */}
-        {/* <Toggle />
+
+    <div className="w-[100vw]  lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center">
+      {/* <Counter /> */}
+      {/* <DoubleAndHalfCounter /> */}
+      {/* <MaxLimitCounter /> */}
+      {/* <TimerBasedAutoCounter /> */}
+      {/* <Toggle />
         <CounterToggle />
         <StepInputCounterToggle />
         <AutoHideToggle />
@@ -52,13 +53,8 @@ export default function App() {
         <WordAndCharacterCount />
         <MaxLimitCounter />
         <AutoUppercaseToggle /> */}
-      </div>
-      {/* <div className="w-[100vw] bg-[#141C2F] lg:h-[100vh] min-h-[100vh] overflow-y-scroll flex justify-center items-center"> */}
-      {/* <Accordian /> */}
-      {/* <ContactUs /> */}
-      {/* <SearchBar /> */}
-      {/* <Counter /> */}
-      {/* </div> */}
-    </>
+      <SearchSortTodo />
+    </div>
+
   );
 }
